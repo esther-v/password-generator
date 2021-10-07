@@ -16,13 +16,15 @@ body{
 }
 
 .container{
-    width: 400px;
+    min-width: 400px;
     background-color: #0a3d62;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    
 }
 
 .pw-header{
     padding: 1rem;
+    position: relative;
 }
 
 .pw{
@@ -31,12 +33,12 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
-    position: relative;
     font-size: 1.6rem;
     padding: 1rem;
+
 }
 
-.pw button{
+#copy{
     background-color: #45657d;
     color: #f1f1f1;
     font-family: inherit;
@@ -44,7 +46,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0);
     border: none;
     cursor: pointer;
 }
@@ -68,4 +70,5 @@ body{
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #f1f1f1;
+    cursor: pointer;
 }
